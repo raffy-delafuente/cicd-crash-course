@@ -5,7 +5,7 @@ app.use(express.json());
 
 // Simple home route
 app.get('/', (req, res) => {
-  res.json({ message: 'Hello from CI/CD crash course' });
+  res.json({ message: 'Hello from production - deployed via CI/CD' });
 });
 
 // Health check (real apps need this for monitoring)
