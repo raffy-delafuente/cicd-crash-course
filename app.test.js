@@ -5,7 +5,7 @@ describe('App endpoints', () => {
   test('GET / returns welcome message', async () => {
     const res = await request(app).get('/');
     expect(res.status).toBe(200);
-    expect(res.body.message).toBe('Hello from production - deployed via CI/CD');
+    expect(res.body.message).toBe('Wrong message that will fail');
   });
 
   test('GET /health returns ok status', async () => {
