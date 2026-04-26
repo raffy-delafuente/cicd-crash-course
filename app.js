@@ -5,7 +5,7 @@ app.use(express.json());
 
 // Simple home route
 app.get('/', (req, res) => {
-  res.json({ message: 'Wrong message that will fail' });
+  res.json({ message: 'Hello from image-based deployment' });
 });
 
 // Health check (real apps need this for monitoring)
