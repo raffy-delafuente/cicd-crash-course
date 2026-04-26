@@ -5,7 +5,7 @@ app.use(express.json());
 
 // Simple home route
 app.get('/', (req, res) => {
-  res.json({ message: 'Hello from production - deployed via CI/CD' });
+  res.json({ message: 'Wrong message that will fail' });
 });
 
 // Health check (real apps need this for monitoring)
